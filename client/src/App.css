@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f5f9;
+}
+
+button {
+  font-family: inherit;
+}
+
+.dashboard-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+}
+
+/* HEADER */
+
+.dashboard-header {
+  width: 100%;
+  background: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.logo-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  color: #000000;
+}
+
+/* MAIN */
+
+.dashboard-content {
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+  padding: 45px 25px 60px;
+}
+
+/* WELCOME */
+
+.welcome-box {
+  width: 100%;
+  background: #111827;
+  color: white;
+  padding: 35px 30px;
+  border-radius: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.welcome-box h1 {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.welcome-box p {
+  margin: 15px 0 0;
+  font-size: 20px;
+  color: #cbd5e1;
+}
+
+/* SECTION TITLE */
+
+.choose-title {
+  text-align: center;
+  color: #111827;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* CARDS GRID */
+
+.interview-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+
+.interview-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px 22px;
+  text-align: center;
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+}
+
+.interview-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.interview-card h2 {
+  margin: 5px 0 15px;
+  color: #111827;
+  font-size: 25px;
+}
+
+.interview-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.5;
+  flex: 1;
+}
+
+/* BUTTON */
+
+.start-button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.start-button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+/* COLORS */
+
+.technical-button {
+  background: #2563eb;
+}
+
+.hr-button {
+  background: #7c3aed;
+}
+
+.mock-button {
+  background: #16a34a;
+}
+
+.aptitude-button {
+  background: #ea580c;
+}
+
+/* LOGOUT */
+
+.logout-button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .interview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .welcome-box h1 {
+    font-size: 34px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .dashboard-header {
+    padding: 15px 20px;
+  }
+
+  .logo-title {
+    font-size: 20px;
+  }
+
+  .dashboard-content {
+    padding: 25px 15px;
+  }
+
+  .interview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-box {
+    padding: 25px 15px;
+  }
+
+  .welcome-box h1 {
+    font-size: 28px;
+  }
+
+  .welcome-box p {
+    font-size: 16px;
+  }
+
+  .choose-title {
+    font-size: 26px;
+  }
+}
